@@ -4,6 +4,7 @@
 #include "bayestest.hpp"
 
 using bayestest::BinaryTest;
+using bayestest::CountTest;
 
 extern "C"
 void Init_ext() {
