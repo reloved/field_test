@@ -13,4 +13,8 @@ void Init_ext() {
     .define_constructor(Rice::Constructor<BinaryTest>())
     .define_method("add", &BinaryTest::add)
     .define_method("probabilities", &BinaryTest::probabilities);
+  Rice::define_class_under<CountTest>(rb_mFieldTest, "CountTest")
+    .define_constructor(Rice::Constructor<CountTest>())
+    .define_method("add", &CountTest::add)
+    .define_method("probabilities", &CountTest::probabilities);
 }
